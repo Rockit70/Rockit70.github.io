@@ -1,0 +1,126 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+    
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/leaf.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar{
+    
+    transform: translate(0px, -75px);
+    text-align: center;
+    font-size: xxx-large;
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.2s;
+}
+
+.navbar ul li:hover:after{
+    width: 100%;
+    
+}
+
+.main{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+}
+
+.main h1{
+    font-size: 70px;
+    margin-top: 80px;
+    font-weight: bold;
+}
+
+
+.main h4{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height:25px ;
+}
+
+
+/* animated button css*/
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border-radius: 120px;
+    border: 2px white;
+    background: green;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+    
+}
+
+button:hover, button:focus, button:active{
+    box-shadow: 0 0 20px  white;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+button a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    
+}
